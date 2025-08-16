@@ -1,21 +1,20 @@
+import os
 import pandas as pd
 from dotenv import load_dotenv
-import snowflake.connector
-import os
-from snowflake.connector.pandas_tools import write_pandas
+from sqlalchemy import create_engine, text
 
 # Load credentials from .env
-load_dotenv()
+load_dotenv("/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/.env")
 
 sf_user = os.getenv('SNOWFLAKE_USER')
 sf_password = os.getenv('SNOWFLAKE_PASSWORD')
 sf_account = os.getenv('SNOWFLAKE_ACCOUNT')
-sf_warehouse = 'etf_wh'
-sf_database = 'etf_db'
-sf_schema = 'raw'
+sf_warehouse = 'ETF_WH'
+sf_database = 'ETF_DB'
+sf_schema = 'RAW'
 
 # Folder with CSVs
-csv_folder = './etf_prices_raw'
+csv_folder = '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/data'
 
 # CSV → target table mapping
 etf_files = {
@@ -26,45 +25,32 @@ etf_files = {
     'EFA_historical.csv': 'EFA_historical'
 }
 
-# Connect to Snowflake
-conn = snowflake.connector.connect(
-    user=sf_user,
-    password=sf_password,
-    account=sf_account,
-    warehouse=sf_warehouse,
-    database=sf_database,
-    schema=sf_schema
+# Create SQLAlchemy engine
+engine = create_engine(
+    f'snowflake://{sf_user}:{sf_password}@{sf_account}/{sf_database}/{sf_schema}?warehouse={sf_warehouse}'
 )
-cs = conn.cursor()
 
-# Make sure the session is using the right DB and schema
-cs.execute(f'USE DATABASE {sf_database}')
-cs.execute(f'USE SCHEMA {sf_schema}')
+with engine.begin() as conn:  # Auto-commit transactions
+    for file_name, table_name in etf_files.items():
+        file_path = os.path.join(csv_folder, file_name)
+        print(f"📂 Uploading {file_name} → {table_name}...")
 
-for file_name, table_name in etf_files.items():
-    file_path = os.path.join(csv_folder, file_name)
-    print(f"📂 Uploading {file_name} → {table_name}...")
+        # Load CSV
+        df = pd.read_csv(file_path)
 
-    # Load CSV
-    df = pd.read_csv(file_path)
+        # Convert columns
+        df['Date'] = pd.to_datetime(df['Date'])
+        price_cols = ['Open', 'High', 'Low', 'Close', 'Volume']
+        for col in price_cols:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors='coerce')
 
-    # Convert columns
-    df['Date'] = pd.to_datetime(df['Date'])
-    price_cols = ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
-    for col in price_cols:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
+        # Ensure table exists: build simple CREATE TABLE IF NOT EXISTS
+        col_defs = ['"Date" DATE'] + [f'"{col}" FLOAT' for col in price_cols if col in df.columns]
+        conn.execute(text(f'CREATE TABLE IF NOT EXISTS {table_name} ({", ".join(col_defs)})'))
 
-    # Create table if not exists
-    col_defs = ['"Date" DATE'] + [f'"{col}" FLOAT' for col in price_cols if col in df.columns]
-    cs.execute(f'CREATE TABLE IF NOT EXISTS {table_name} ({", ".join(col_defs)});')
+        # Upload DataFrame to Snowflake
+        df.to_sql(table_name, con=conn, if_exists='append', index=False, method='multi')
+        print(f"✅ {len(df)} rows inserted into {table_name}")
 
-    # Upload to Snowflake
-    success, nchunks, nrows, _ = write_pandas(conn, df, table_name=table_name, database=sf_database, schema=sf_schema)
-    if success:
-        print(f"✅ {nrows} rows inserted into {table_name}")
-    else:
-        print(f"❌ Failed to insert {table_name}")
-
-cs.close()
-conn.close()
+print("All CSVs uploaded successfully!")
