@@ -1,18 +1,40 @@
-from dotenv import load_dotenv
 import os
-import snowflake.connector as sf
+from dotenv import load_dotenv
+import snowflake.connector
 
-# Load variables from .env
-load_dotenv()
+# Load environment variables from .env
+load_dotenv("/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/.env")
 
-# Connect to Snowflake using environment variables
-conn = sf.connect(
-    user=os.getenv("SNOWFLAKE_USER"),
-    password=os.getenv("SNOWFLAKE_PASSWORD"),
-    account=os.getenv("SNOWFLAKE_ACCOUNT"),
-    warehouse=os.getenv("SNOWFLAKE_WAREHOUSE"),
-    database=os.getenv("SNOWFLAKE_DATABASE"),
-    schema=os.getenv("SNOWFLAKE_SCHEMA")
-)
+# Snowflake connection parameters from .env
+sf_user = os.getenv("SNOWFLAKE_USER")
+sf_password = os.getenv("SNOWFLAKE_PASSWORD")
+sf_account = os.getenv("SNOWFLAKE_ACCOUNT")
+sf_warehouse = os.getenv("SNOWFLAKE_WAREHOUSE")
+sf_database = os.getenv("SNOWFLAKE_DATABASE")
+sf_schema = os.getenv("SNOWFLAKE_SCHEMA")
 
-print("Connected:", conn)
+try:
+    # Connect to Snowflake
+    conn = snowflake.connector.connect(
+        user=sf_user,
+        password=sf_password,
+        account=sf_account,
+        warehouse=sf_warehouse,
+        database=sf_database,
+        schema=sf_schema
+    )
+
+    cs = conn.cursor()
+    cs.execute("SELECT CURRENT_VERSION()")
+    version = cs.fetchone()[0]
+    print(f"✅ Connection successful! Snowflake version: {version}")
+
+except Exception as e:
+    print(f"❌ Connection failed: {e}")
+
+finally:
+    try:
+        cs.close()
+        conn.close()
+    except:
+        pass
