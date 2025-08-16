@@ -1,0 +1,63 @@
+[0m22:13:55.875228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105aa6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b2b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b07090>]}
+
+
+============================== 22:13:55.885880 | 207a9926-4a55-4494-a0d6-fbedb56f9fc8 ==============================
+[0m22:13:55.885880 [info ] [MainThread]: Running with dbt=1.10.9
+[0m22:13:55.887246 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'invocation_command': 'dbt debug', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'empty': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'no_print': 'None', 'use_colors': 'True'}
+[0m22:13:55.916597 [info ] [MainThread]: dbt version: 1.10.9
+[0m22:13:55.917212 [info ] [MainThread]: python version: 3.11.13
+[0m22:13:55.917814 [info ] [MainThread]: python path: /usr/local/opt/python@3.11/bin/python3.11
+[0m22:13:55.918351 [info ] [MainThread]: os info: macOS-15.6-x86_64-i386-64bit
+[0m22:13:57.290061 [info ] [MainThread]: Using profiles dir at /Users/deborah_j/.dbt
+[0m22:13:57.290764 [info ] [MainThread]: Using profiles.yml file at /Users/deborah_j/.dbt/profiles.yml
+[0m22:13:57.291318 [info ] [MainThread]: Using dbt_project.yml file at /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/dbt_project.yml
+[0m22:13:57.293034 [info ] [MainThread]: adapter type: snowflake
+[0m22:13:57.293599 [info ] [MainThread]: adapter version: 1.10.0
+[0m22:13:57.421582 [info ] [MainThread]: Configuration:
+[0m22:13:57.422148 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:13:57.422548 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:13:57.422953 [info ] [MainThread]: Required dependencies:
+[0m22:13:57.423458 [debug] [MainThread]: Executing "git --help"
+[0m22:13:57.470829 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:13:57.472154 [debug] [MainThread]: STDERR: "b''"
+[0m22:13:57.472583 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:13:57.473173 [info ] [MainThread]: Connection:
+[0m22:13:57.473709 [info ] [MainThread]:   account: RGCIGVB-XF40540
+[0m22:13:57.474130 [info ] [MainThread]:   user: ljia42
+[0m22:13:57.474558 [info ] [MainThread]:   database: etf_db
+[0m22:13:57.475172 [info ] [MainThread]:   warehouse: etf_wh
+[0m22:13:57.475552 [info ] [MainThread]:   role: SYSADMIN
+[0m22:13:57.475914 [info ] [MainThread]:   schema: etf_db.raw
+[0m22:13:57.476299 [info ] [MainThread]:   authenticator: None
+[0m22:13:57.476679 [info ] [MainThread]:   oauth_client_id: None
+[0m22:13:57.477036 [info ] [MainThread]:   query_tag: None
+[0m22:13:57.477569 [info ] [MainThread]:   client_session_keep_alive: False
+[0m22:13:57.478152 [info ] [MainThread]:   host: None
+[0m22:13:57.478733 [info ] [MainThread]:   port: None
+[0m22:13:57.479286 [info ] [MainThread]:   proxy_host: None
+[0m22:13:57.479783 [info ] [MainThread]:   proxy_port: None
+[0m22:13:57.480209 [info ] [MainThread]:   protocol: None
+[0m22:13:57.480714 [info ] [MainThread]:   connect_retries: 1
+[0m22:13:57.481133 [info ] [MainThread]:   connect_timeout: None
+[0m22:13:57.481592 [info ] [MainThread]:   retry_on_database_errors: False
+[0m22:13:57.481986 [info ] [MainThread]:   retry_all: False
+[0m22:13:57.482593 [info ] [MainThread]:   insecure_mode: False
+[0m22:13:57.483374 [info ] [MainThread]:   reuse_connections: True
+[0m22:13:57.484231 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m22:13:57.485443 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m22:13:57.675990 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:13:57.774260 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:13:57.775218 [debug] [MainThread]: On debug: select 1 as id
+[0m22:13:57.775867 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:14:01.176098 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.400 seconds
+[0m22:14:01.177353 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:14:01.177855 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:14:01.183222 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.411426, "process_in_blocks": "0", "process_kernel_time": 0.848881, "process_mem_max_rss": "187346944", "process_out_blocks": "0", "process_user_time": 3.128269}
+[0m22:14:01.183935 [debug] [MainThread]: Command `dbt debug` succeeded at 22:14:01.183783 after 5.41 seconds
+[0m22:14:01.184466 [debug] [MainThread]: Connection 'debug' was left open.
+[0m22:14:01.184842 [debug] [MainThread]: On debug: Close
+[0m22:14:01.536934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a9da50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10584da10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f535d0>]}
+[0m22:14:01.537881 [debug] [MainThread]: Flushing usage events
+[0m22:14:02.223139 [debug] [MainThread]: An error was encountered while trying to flush usage events
