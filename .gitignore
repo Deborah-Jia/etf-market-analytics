@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+.env.local
+
+# Snowflake / credentials
+sf_*.json
+*.key
+*.secret
+
+# IDE / system
+.vscode/
+.DS_Store
