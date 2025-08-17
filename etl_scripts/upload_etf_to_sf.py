@@ -11,7 +11,7 @@ sf_password = os.getenv('SNOWFLAKE_PASSWORD')
 sf_account = os.getenv('SNOWFLAKE_ACCOUNT')
 sf_warehouse = 'ETF_WH'
 sf_database = 'ETF_DB'
-sf_schema = 'RAW'
+sf_schema = 'SILVER'
 
 # Folder with CSVs
 csv_folder = '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/data'

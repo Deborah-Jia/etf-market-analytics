@@ -1,63 +1,1254 @@
-[0m22:13:55.875228 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105aa6390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b2b6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b07090>]}
+[0m02:13:38.165122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc8b990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd14650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd14a50>]}
 
 
-============================== 22:13:55.885880 | 207a9926-4a55-4494-a0d6-fbedb56f9fc8 ==============================
-[0m22:13:55.885880 [info ] [MainThread]: Running with dbt=1.10.9
-[0m22:13:55.887246 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'indirect_selection': 'eager', 'printer_width': '80', 'invocation_command': 'dbt debug', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'send_anonymous_usage_stats': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'debug': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'warn_error': 'None', 'partial_parse': 'True', 'version_check': 'True', 'empty': 'None', 'log_cache_events': 'False', 'fail_fast': 'False', 'cache_selected_only': 'False', 'quiet': 'False', 'no_print': 'None', 'use_colors': 'True'}
-[0m22:13:55.916597 [info ] [MainThread]: dbt version: 1.10.9
-[0m22:13:55.917212 [info ] [MainThread]: python version: 3.11.13
-[0m22:13:55.917814 [info ] [MainThread]: python path: /usr/local/opt/python@3.11/bin/python3.11
-[0m22:13:55.918351 [info ] [MainThread]: os info: macOS-15.6-x86_64-i386-64bit
-[0m22:13:57.290061 [info ] [MainThread]: Using profiles dir at /Users/deborah_j/.dbt
-[0m22:13:57.290764 [info ] [MainThread]: Using profiles.yml file at /Users/deborah_j/.dbt/profiles.yml
-[0m22:13:57.291318 [info ] [MainThread]: Using dbt_project.yml file at /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/dbt_project.yml
-[0m22:13:57.293034 [info ] [MainThread]: adapter type: snowflake
-[0m22:13:57.293599 [info ] [MainThread]: adapter version: 1.10.0
-[0m22:13:57.421582 [info ] [MainThread]: Configuration:
-[0m22:13:57.422148 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
-[0m22:13:57.422548 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
-[0m22:13:57.422953 [info ] [MainThread]: Required dependencies:
-[0m22:13:57.423458 [debug] [MainThread]: Executing "git --help"
-[0m22:13:57.470829 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
-[0m22:13:57.472154 [debug] [MainThread]: STDERR: "b''"
-[0m22:13:57.472583 [info ] [MainThread]:  - git [[32mOK found[0m]
+============================== 02:13:38.171770 | e755b245-2676-4659-8e78-15b913af9be5 ==============================
+[0m02:13:38.171770 [info ] [MainThread]: Running with dbt=1.10.9
+[0m02:13:38.172668 [debug] [MainThread]: running dbt with arguments {'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'no_print': 'None', 'target_path': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'empty': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'static_parser': 'True', 'quiet': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'indirect_selection': 'eager', 'profiles_dir': '/Users/deborah_j/.dbt', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'partial_parse': 'True'}
+[0m02:13:38.200553 [info ] [MainThread]: dbt version: 1.10.9
+[0m02:13:38.201095 [info ] [MainThread]: python version: 3.11.13
+[0m02:13:38.201516 [info ] [MainThread]: python path: /usr/local/opt/python@3.11/bin/python3.11
+[0m02:13:38.201911 [info ] [MainThread]: os info: macOS-15.6-x86_64-i386-64bit
+[0m02:13:39.697210 [info ] [MainThread]: Using profiles dir at /Users/deborah_j/.dbt
+[0m02:13:39.697815 [info ] [MainThread]: Using profiles.yml file at /Users/deborah_j/.dbt/profiles.yml
+[0m02:13:39.698236 [info ] [MainThread]: Using dbt_project.yml file at /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/dbt_project.yml
+[0m02:13:39.699242 [info ] [MainThread]: adapter type: snowflake
+[0m02:13:39.699644 [info ] [MainThread]: adapter version: 1.10.0
+[0m02:13:39.814154 [info ] [MainThread]: Configuration:
+[0m02:13:39.814705 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:13:39.815389 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m02:13:39.815826 [info ] [MainThread]: Required dependencies:
+[0m02:13:39.816407 [debug] [MainThread]: Executing "git --help"
+[0m02:13:39.871250 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:13:39.872538 [debug] [MainThread]: STDERR: "b''"
+[0m02:13:39.873156 [info ] [MainThread]:  - git [[32mOK found[0m]
 
-[0m22:13:57.473173 [info ] [MainThread]: Connection:
-[0m22:13:57.473709 [info ] [MainThread]:   account: RGCIGVB-XF40540
-[0m22:13:57.474130 [info ] [MainThread]:   user: ljia42
-[0m22:13:57.474558 [info ] [MainThread]:   database: etf_db
-[0m22:13:57.475172 [info ] [MainThread]:   warehouse: etf_wh
-[0m22:13:57.475552 [info ] [MainThread]:   role: SYSADMIN
-[0m22:13:57.475914 [info ] [MainThread]:   schema: etf_db.raw
-[0m22:13:57.476299 [info ] [MainThread]:   authenticator: None
-[0m22:13:57.476679 [info ] [MainThread]:   oauth_client_id: None
-[0m22:13:57.477036 [info ] [MainThread]:   query_tag: None
-[0m22:13:57.477569 [info ] [MainThread]:   client_session_keep_alive: False
-[0m22:13:57.478152 [info ] [MainThread]:   host: None
-[0m22:13:57.478733 [info ] [MainThread]:   port: None
-[0m22:13:57.479286 [info ] [MainThread]:   proxy_host: None
-[0m22:13:57.479783 [info ] [MainThread]:   proxy_port: None
-[0m22:13:57.480209 [info ] [MainThread]:   protocol: None
-[0m22:13:57.480714 [info ] [MainThread]:   connect_retries: 1
-[0m22:13:57.481133 [info ] [MainThread]:   connect_timeout: None
-[0m22:13:57.481592 [info ] [MainThread]:   retry_on_database_errors: False
-[0m22:13:57.481986 [info ] [MainThread]:   retry_all: False
-[0m22:13:57.482593 [info ] [MainThread]:   insecure_mode: False
-[0m22:13:57.483374 [info ] [MainThread]:   reuse_connections: True
-[0m22:13:57.484231 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
-[0m22:13:57.485443 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
-[0m22:13:57.675990 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
-[0m22:13:57.774260 [debug] [MainThread]: Using snowflake connection "debug"
-[0m22:13:57.775218 [debug] [MainThread]: On debug: select 1 as id
-[0m22:13:57.775867 [debug] [MainThread]: Opening a new connection, currently in state init
-[0m22:14:01.176098 [debug] [MainThread]: SQL status: SUCCESS 1 in 3.400 seconds
-[0m22:14:01.177353 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+[0m02:13:39.873584 [info ] [MainThread]: Connection:
+[0m02:13:39.874381 [info ] [MainThread]:   account: RGCIGVB-XF40540
+[0m02:13:39.874836 [info ] [MainThread]:   user: ljia42
+[0m02:13:39.875363 [info ] [MainThread]:   database: ETF_DB
+[0m02:13:39.875801 [info ] [MainThread]:   warehouse: ETF_WH
+[0m02:13:39.876164 [info ] [MainThread]:   role: SYSADMIN
+[0m02:13:39.876521 [info ] [MainThread]:   schema: RAW
+[0m02:13:39.876891 [info ] [MainThread]:   authenticator: None
+[0m02:13:39.877243 [info ] [MainThread]:   oauth_client_id: None
+[0m02:13:39.877576 [info ] [MainThread]:   query_tag: None
+[0m02:13:39.878068 [info ] [MainThread]:   client_session_keep_alive: False
+[0m02:13:39.878551 [info ] [MainThread]:   host: None
+[0m02:13:39.878931 [info ] [MainThread]:   port: None
+[0m02:13:39.879274 [info ] [MainThread]:   proxy_host: None
+[0m02:13:39.879610 [info ] [MainThread]:   proxy_port: None
+[0m02:13:39.879941 [info ] [MainThread]:   protocol: None
+[0m02:13:39.880265 [info ] [MainThread]:   connect_retries: 1
+[0m02:13:39.880595 [info ] [MainThread]:   connect_timeout: None
+[0m02:13:39.880919 [info ] [MainThread]:   retry_on_database_errors: False
+[0m02:13:39.881242 [info ] [MainThread]:   retry_all: False
+[0m02:13:39.881572 [info ] [MainThread]:   insecure_mode: False
+[0m02:13:39.881898 [info ] [MainThread]:   reuse_connections: True
+[0m02:13:39.882222 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m02:13:39.882929 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m02:13:40.041511 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m02:13:40.189500 [debug] [MainThread]: Using snowflake connection "debug"
+[0m02:13:40.190163 [debug] [MainThread]: On debug: select 1 as id
+[0m02:13:40.190662 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:13:42.603512 [debug] [MainThread]: SQL status: SUCCESS 1 in 2.413 seconds
+[0m02:13:42.605716 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
 
-[0m22:14:01.177855 [info ] [MainThread]: [32mAll checks passed![0m
-[0m22:14:01.183222 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 5.411426, "process_in_blocks": "0", "process_kernel_time": 0.848881, "process_mem_max_rss": "187346944", "process_out_blocks": "0", "process_user_time": 3.128269}
-[0m22:14:01.183935 [debug] [MainThread]: Command `dbt debug` succeeded at 22:14:01.183783 after 5.41 seconds
-[0m22:14:01.184466 [debug] [MainThread]: Connection 'debug' was left open.
-[0m22:14:01.184842 [debug] [MainThread]: On debug: Close
-[0m22:14:01.536934 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a9da50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10584da10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f535d0>]}
-[0m22:14:01.537881 [debug] [MainThread]: Flushing usage events
-[0m22:14:02.223139 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:13:42.606570 [info ] [MainThread]: [32mAll checks passed![0m
+[0m02:13:42.612915 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 4.5406756, "process_in_blocks": "0", "process_kernel_time": 0.822052, "process_mem_max_rss": "202952704", "process_out_blocks": "0", "process_user_time": 3.301874}
+[0m02:13:42.613901 [debug] [MainThread]: Command `dbt debug` succeeded at 02:13:42.613703 after 4.54 seconds
+[0m02:13:42.614529 [debug] [MainThread]: Connection 'debug' was left open.
+[0m02:13:42.615004 [debug] [MainThread]: On debug: Close
+[0m02:13:42.756949 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fce3c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116653a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132c2750>]}
+[0m02:13:42.757888 [debug] [MainThread]: Flushing usage events
+[0m02:13:43.242470 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:18:30.303628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10710ba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070fe790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718d1d0>]}
+
+
+============================== 02:18:30.312307 | fb460944-33c6-44e3-8c15-19fa856e1180 ==============================
+[0m02:18:30.312307 [info ] [MainThread]: Running with dbt=1.10.9
+[0m02:18:30.313294 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select EEM_historical_transformed', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'static_parser': 'True', 'debug': 'False', 'log_format': 'default', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'fail_fast': 'False', 'write_json': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'empty': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'profiles_dir': '/Users/deborah_j/.dbt'}
+[0m02:18:32.351392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb460944-33c6-44e3-8c15-19fa856e1180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1071b4090>]}
+[0m02:18:32.421764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fb460944-33c6-44e3-8c15-19fa856e1180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e34da90>]}
+[0m02:18:32.423169 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m02:18:32.601665 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m02:18:32.602863 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:18:32.603389 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fb460944-33c6-44e3-8c15-19fa856e1180', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5b9e10>]}
+[0m02:18:33.910988 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models/transformations/schema.yml'
+[0m02:18:34.049678 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.my_second_dbt_model' (models/transformations/my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m02:18:34.064052 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.8587615, "process_in_blocks": "0", "process_kernel_time": 0.847012, "process_mem_max_rss": "190705664", "process_out_blocks": "0", "process_user_time": 4.488859}
+[0m02:18:34.065992 [debug] [MainThread]: Command `dbt run` failed at 02:18:34.065778 after 3.86 seconds
+[0m02:18:34.066763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10718d710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e511c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eada410>]}
+[0m02:18:34.067694 [debug] [MainThread]: Flushing usage events
+[0m02:18:34.615757 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:19:39.173345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a423b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a423790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a499b10>]}
+
+
+============================== 02:19:39.181120 | 189f6e7c-9054-42cf-957b-955e8d0382ae ==============================
+[0m02:19:39.181120 [info ] [MainThread]: Running with dbt=1.10.9
+[0m02:19:39.182039 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_cache_events': 'False', 'target_path': 'None', 'no_print': 'None', 'quiet': 'False', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'debug': 'False', 'empty': 'False', 'printer_width': '80', 'log_format': 'default', 'partial_parse': 'True', 'static_parser': 'True', 'introspect': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'use_colors': 'True', 'write_json': 'True', 'version_check': 'True', 'profiles_dir': '/Users/deborah_j/.dbt', 'fail_fast': 'False'}
+[0m02:19:41.235671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '189f6e7c-9054-42cf-957b-955e8d0382ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11174f7d0>]}
+[0m02:19:41.307671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '189f6e7c-9054-42cf-957b-955e8d0382ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1116457d0>]}
+[0m02:19:41.309709 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m02:19:41.485263 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m02:19:41.487228 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m02:19:41.488047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '189f6e7c-9054-42cf-957b-955e8d0382ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119cabd0>]}
+[0m02:19:42.681930 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'my_first_dbt_model' in the 'models' section of file 'models/transformations/schema.yml'
+[0m02:19:42.796348 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.my_second_dbt_model' (models/transformations/my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m02:19:42.803803 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.728699, "process_in_blocks": "0", "process_kernel_time": 0.805655, "process_mem_max_rss": "191508480", "process_out_blocks": "0", "process_user_time": 4.476083}
+[0m02:19:42.804696 [debug] [MainThread]: Command `dbt run` failed at 02:19:42.804548 after 3.73 seconds
+[0m02:19:42.805201 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a416710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a485210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111c8c910>]}
+[0m02:19:42.805723 [debug] [MainThread]: Flushing usage events
+[0m02:19:43.381934 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:27:59.651860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd11d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd11810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dda4b90>]}
+
+
+============================== 03:27:59.659076 | 8ca80e87-89d1-432e-956b-96d8a0721222 ==============================
+[0m03:27:59.659076 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:27:59.660020 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'log_format': 'default', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'profiles_dir': '/Users/deborah_j/.dbt', 'empty': 'False', 'no_print': 'None', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'printer_width': '80', 'warn_error': 'None', 'quiet': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'partial_parse': 'True'}
+[0m03:28:01.897706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8ca80e87-89d1-432e-956b-96d8a0721222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1119362d0>]}
+[0m03:28:01.967588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8ca80e87-89d1-432e-956b-96d8a0721222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ef9990>]}
+[0m03:28:01.969730 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:28:02.145086 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:28:02.146408 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:28:02.146981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8ca80e87-89d1-432e-956b-96d8a0721222', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150be290>]}
+[0m03:28:03.374467 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.my_second_dbt_model' (models/transformations/my_second_dbt_model.sql) depends on a node named 'my_first_dbt_model' which was not found
+[0m03:28:03.383893 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.8332517, "process_in_blocks": "0", "process_kernel_time": 0.910476, "process_mem_max_rss": "189640704", "process_out_blocks": "0", "process_user_time": 4.336942}
+[0m03:28:03.384657 [debug] [MainThread]: Command `dbt run` failed at 03:28:03.384530 after 3.83 seconds
+[0m03:28:03.385441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd7ff50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dd02510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1150b28d0>]}
+[0m03:28:03.386838 [debug] [MainThread]: Flushing usage events
+[0m03:28:03.947917 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:28:47.014321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075c0a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107645050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107645490>]}
+
+
+============================== 03:28:47.020816 | 3e385321-240d-45de-9aa6-47a3e3520694 ==============================
+[0m03:28:47.020816 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:28:47.021562 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'use_experimental_parser': 'False', 'warn_error': 'None', 'static_parser': 'True', 'fail_fast': 'False', 'write_json': 'True', 'empty': 'False', 'printer_width': '80', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'version_check': 'True', 'quiet': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'log_format': 'default', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'target_path': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'introspect': 'True'}
+[0m03:28:48.973292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3e385321-240d-45de-9aa6-47a3e3520694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10760e010>]}
+[0m03:28:49.043818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3e385321-240d-45de-9aa6-47a3e3520694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e805750>]}
+[0m03:28:49.045704 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:28:49.228763 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:28:49.230058 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:28:49.230722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3e385321-240d-45de-9aa6-47a3e3520694', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb8b2d0>]}
+[0m03:28:50.466227 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.EEM_historical_transformed' (models/transformations/EEM_historical_transformed.sql) depends on a node named 'EEM_historical' which was not found
+[0m03:28:50.472350 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.546293, "process_in_blocks": "0", "process_kernel_time": 0.765236, "process_mem_max_rss": "189714432", "process_out_blocks": "0", "process_user_time": 4.36406}
+[0m03:28:50.473253 [debug] [MainThread]: Command `dbt run` failed at 03:28:50.473115 after 3.55 seconds
+[0m03:28:50.473830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075b2310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1068f4610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ee6e8d0>]}
+[0m03:28:50.474290 [debug] [MainThread]: Flushing usage events
+[0m03:28:50.986090 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:34:42.562831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113acac90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b26490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113aca810>]}
+
+
+============================== 03:34:42.569649 | 934bf05e-9f5d-4472-9790-5980c71774fa ==============================
+[0m03:34:42.569649 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:34:42.570417 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'no_print': 'None', 'cache_selected_only': 'False', 'static_parser': 'True', 'partial_parse': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'quiet': 'False', 'use_colors': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'fail_fast': 'False', 'introspect': 'True', 'profiles_dir': '/Users/deborah_j/.dbt', 'use_experimental_parser': 'False', 'version_check': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'log_format': 'default', 'indirect_selection': 'eager', 'empty': 'False', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'debug': 'False', 'send_anonymous_usage_stats': 'True'}
+[0m03:34:44.548109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '934bf05e-9f5d-4472-9790-5980c71774fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113abe4d0>]}
+[0m03:34:44.616838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '934bf05e-9f5d-4472-9790-5980c71774fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11acae110>]}
+[0m03:34:44.618526 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:34:44.796642 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:34:44.798539 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:34:44.799294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '934bf05e-9f5d-4472-9790-5980c71774fa', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b02fe50>]}
+[0m03:34:46.080299 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.EEM_historical_transformed' (models/transformations/EEM_historical_transformed.sql) depends on a source named 'etf_raw.EEM_historical' which was not found
+[0m03:34:46.086262 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.6205797, "process_in_blocks": "0", "process_kernel_time": 0.823202, "process_mem_max_rss": "189382656", "process_out_blocks": "0", "process_user_time": 4.358272}
+[0m03:34:46.087036 [debug] [MainThread]: Command `dbt run` failed at 03:34:46.086911 after 3.62 seconds
+[0m03:34:46.087746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113abe550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113b26c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b1726d0>]}
+[0m03:34:46.088364 [debug] [MainThread]: Flushing usage events
+[0m03:34:46.649994 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:38:10.171797 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088cf590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3b0e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3b11d0>]}
+
+
+============================== 03:38:10.182950 | e6bd112c-8a2e-4173-9ed1-a18ad6024075 ==============================
+[0m03:38:10.182950 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:38:10.184254 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'debug': 'False', 'printer_width': '80', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'static_parser': 'True', 'partial_parse': 'True', 'write_json': 'True', 'warn_error': 'None', 'no_print': 'None', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'empty': 'False', 'target_path': 'None', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'introspect': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'fail_fast': 'False', 'quiet': 'False'}
+[0m03:38:12.153280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e6bd112c-8a2e-4173-9ed1-a18ad6024075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3540d0>]}
+[0m03:38:12.238549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e6bd112c-8a2e-4173-9ed1-a18ad6024075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112571610>]}
+[0m03:38:12.239908 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:38:12.464766 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:38:12.466673 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:38:12.467398 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e6bd112c-8a2e-4173-9ed1-a18ad6024075', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11260e290>]}
+[0m03:38:14.101506 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.EEM_historical_transformed' (models/transformations/EEM_historical_transformed.sql) depends on a source named 'EEM_historical_transformed.EEM_historical' which was not found
+[0m03:38:14.107233 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.1039405, "process_in_blocks": "0", "process_kernel_time": 0.928161, "process_mem_max_rss": "189652992", "process_out_blocks": "0", "process_user_time": 5.399677}
+[0m03:38:14.108100 [debug] [MainThread]: Command `dbt run` failed at 03:38:14.107960 after 4.10 seconds
+[0m03:38:14.108713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3b1510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b322650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106e47a10>]}
+[0m03:38:14.109476 [debug] [MainThread]: Flushing usage events
+[0m03:38:14.613729 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:38:55.663038 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10953f0d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095b5650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095b5a90>]}
+
+
+============================== 03:38:55.669630 | 728e2a9a-ab7b-4be3-a043-36b82180fc46 ==============================
+[0m03:38:55.669630 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:38:55.670425 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'empty': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'warn_error': 'None', 'invocation_command': 'dbt ls --resource-type source', 'profiles_dir': '/Users/deborah_j/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'version_check': 'True', 'no_print': 'None', 'debug': 'False', 'write_json': 'True', 'target_path': 'None', 'log_format': 'default', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'partial_parse': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'printer_width': '80'}
+[0m03:38:57.477475 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '728e2a9a-ab7b-4be3-a043-36b82180fc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d0fa510>]}
+[0m03:38:57.552017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '728e2a9a-ab7b-4be3-a043-36b82180fc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110745a90>]}
+[0m03:38:57.553480 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:38:57.726835 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:38:57.727864 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:38:57.728407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '728e2a9a-ab7b-4be3-a043-36b82180fc46', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1108aad10>]}
+[0m03:38:58.961599 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.EEM_historical_transformed' (models/transformations/EEM_historical_transformed.sql) depends on a source named 'EEM_historical_transformed.EEM_historical' which was not found
+[0m03:38:58.968651 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 3.392873, "process_in_blocks": "0", "process_kernel_time": 0.810485, "process_mem_max_rss": "189853696", "process_out_blocks": "0", "process_user_time": 4.459709}
+[0m03:38:58.969775 [debug] [MainThread]: Command `dbt ls` failed at 03:38:58.969622 after 3.39 seconds
+[0m03:38:58.970311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109532690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105043c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110cbe410>]}
+[0m03:38:58.970810 [debug] [MainThread]: Flushing usage events
+[0m03:38:59.474223 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:40:16.379871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf45990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfc5890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfc5cd0>]}
+
+
+============================== 03:40:16.393720 | d4508853-f0c5-47cd-a4f2-55636806bb33 ==============================
+[0m03:40:16.393720 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:40:16.395309 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt ls --resource-type source', 'target_path': 'None', 'indirect_selection': 'eager', 'partial_parse': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'warn_error': 'None', 'empty': 'None', 'log_format': 'default', 'profiles_dir': '/Users/deborah_j/.dbt', 'use_experimental_parser': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'write_json': 'True', 'no_print': 'None', 'quiet': 'False', 'version_check': 'True', 'debug': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'static_parser': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False'}
+[0m03:40:18.538534 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd4508853-f0c5-47cd-a4f2-55636806bb33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf4fb10>]}
+[0m03:40:18.619217 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd4508853-f0c5-47cd-a4f2-55636806bb33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114116390>]}
+[0m03:40:18.621062 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:40:21.404255 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:40:21.406667 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:40:21.407799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'd4508853-f0c5-47cd-a4f2-55636806bb33', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11449ae10>]}
+[0m03:40:23.005050 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.etf_dbt.EEM_historical_transformed' (models/transformations/EEM_historical_transformed.sql) depends on a source named 'EEM_historical_transformed.EEM_historical' which was not found
+[0m03:40:23.011716 [debug] [MainThread]: Resource report: {"command_name": "list", "command_success": false, "command_wall_clock_time": 7.8599014, "process_in_blocks": "0", "process_kernel_time": 0.902654, "process_mem_max_rss": "187232256", "process_out_blocks": "0", "process_user_time": 4.97123}
+[0m03:40:23.012553 [debug] [MainThread]: Command `dbt ls` failed at 03:40:23.012400 after 7.86 seconds
+[0m03:40:23.013076 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cf3a690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cfa8850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1147f2fd0>]}
+[0m03:40:23.013830 [debug] [MainThread]: Flushing usage events
+[0m03:40:23.561046 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:42:49.159347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104993010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1049eea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a09510>]}
+
+
+============================== 03:42:49.166509 | 27dba608-30db-4ff7-892c-c3541589c81c ==============================
+[0m03:42:49.166509 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:42:49.167425 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'empty': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'no_print': 'None', 'version_check': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'target_path': 'None', 'printer_width': '80', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'use_colors': 'True', 'partial_parse': 'True', 'introspect': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'debug': 'False'}
+[0m03:42:51.316055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd1b510>]}
+[0m03:42:51.400826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103b72650>]}
+[0m03:42:51.402405 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:42:51.601691 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:42:51.603456 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:42:51.604278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bdcc850>]}
+[0m03:42:53.370082 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:42:53.385530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c34e310>]}
+[0m03:42:53.467816 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:42:53.471077 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:42:53.511399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1130a2b50>]}
+[0m03:42:53.511972 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:42:53.512373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c0b56d0>]}
+[0m03:42:53.513912 [info ] [MainThread]: 
+[0m03:42:53.514315 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:42:53.514675 [info ] [MainThread]: 
+[0m03:42:53.515214 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:42:53.516092 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:42:53.633586 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:42:53.634086 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:42:53.634461 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:42:55.844196 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 2.210 seconds
+[0m03:42:55.849016 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:42:55.866357 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:42:55.866842 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:42:56.005971 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.139 seconds
+[0m03:42:56.013556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c09fbd0>]}
+[0m03:42:56.023828 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:42:56.024949 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:42:56.025731 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:42:56.026348 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:42:56.038118 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:42:56.039596 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:42:56.075561 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:42:56.078715 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:42:56.079218 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (
+
+with base as (
+    select *
+    from ETF_DB.RAW.EEM_historical
+    where date is not null -- remove first null row
+),
+
+daily_calc as (
+    select
+        *,
+        lag(close) over(partition by ticker order by date) as prev_close,
+        first_value(close) over(partition by ticker order by date) as first_close
+    from base
+),
+
+metrics as (
+    select
+        -- original fields
+        date,
+        ticker,
+        open,
+        high,
+        low,
+        close,
+        volume,
+
+        -- core return metrics
+        (close - prev_close) / prev_close as daily_return,
+        (close / first_close) - 1 as cumulative_return,
+
+        -- moving averages
+        avg(close) over(partition by ticker order by date rows between 19 preceding and current row) as ma_20,
+        avg(close) over(partition by ticker order by date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day standard)
+        case
+            when avg_gain + avg_loss = 0 then 0
+            else 100 - (100 / (1 + (avg_gain / avg_loss)))
+        end as rsi_14,
+
+        -- NEW: High/Low based metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close) / 3 as typical_price
+
+    from (
+        select
+            *,
+            avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by date rows between 13 preceding and current row) as avg_gain,
+            avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by date rows between 13 preceding and current row) as avg_loss
+        from daily_calc
+    )
+)
+
+select * from metrics
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:42:56.241147 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b86-0001-30d4-0000-0000ceadb881
+[0m03:42:56.242092 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 10 at position 10
+invalid identifier 'DATE'
+[0m03:42:56.249120 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 10
+  invalid identifier 'DATE'
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:42:56.251927 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '27dba608-30db-4ff7-892c-c3541589c81c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134b2bd0>]}
+[0m03:42:56.253640 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.22s]
+[0m03:42:56.255159 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:42:56.256317 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 10
+  invalid identifier 'DATE'
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:42:56.259240 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:42:56.259781 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:42:56.260289 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:42:56.383419 [info ] [MainThread]: 
+[0m03:42:56.384238 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 2.87 seconds (2.87s).
+[0m03:42:56.385677 [debug] [MainThread]: Command end result
+[0m03:42:56.414077 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:42:56.416022 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:42:56.422880 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:42:56.423284 [info ] [MainThread]: 
+[0m03:42:56.423702 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:42:56.424060 [info ] [MainThread]: 
+[0m03:42:56.424483 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:42:56.425077 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  000904 (42000): SQL compilation error: error line 10 at position 10
+  invalid identifier 'DATE'
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:42:56.425451 [info ] [MainThread]: 
+[0m03:42:56.425857 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:42:56.426198 [info ] [MainThread]: 
+[0m03:42:56.426560 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:42:56.431811 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.367838, "process_in_blocks": "0", "process_kernel_time": 1.057831, "process_mem_max_rss": "214880256", "process_out_blocks": "0", "process_user_time": 5.363329}
+[0m03:42:56.432423 [debug] [MainThread]: Command `dbt run` failed at 03:42:56.432306 after 7.37 seconds
+[0m03:42:56.432867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104a09590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104986690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1004be390>]}
+[0m03:42:56.433565 [debug] [MainThread]: Flushing usage events
+[0m03:42:57.010014 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:44:39.454304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086c3650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10871e410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108745810>]}
+
+
+============================== 03:44:39.461918 | d0258298-542c-4363-88de-13bfc16dec13 ==============================
+[0m03:44:39.461918 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:44:39.462842 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'empty': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'indirect_selection': 'eager', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'quiet': 'False', 'cache_selected_only': 'False', 'debug': 'False', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'warn_error': 'None', 'target_path': 'None', 'profiles_dir': '/Users/deborah_j/.dbt', 'log_cache_events': 'False', 'version_check': 'True', 'fail_fast': 'False'}
+[0m03:44:41.530546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c2e6790>]}
+[0m03:44:41.603363 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f8e5a50>]}
+[0m03:44:41.605174 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:44:41.781389 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:44:42.029152 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:44:42.029836 [debug] [MainThread]: Partial parsing: updated file: etf_dbt://models/transformations/EEM_historical_transformed.sql
+[0m03:44:42.386364 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:44:42.403146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086c2510>]}
+[0m03:44:42.480461 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:44:42.484505 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:44:42.518192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11003d0d0>]}
+[0m03:44:42.518906 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:44:42.519392 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100a40d0>]}
+[0m03:44:42.521074 [info ] [MainThread]: 
+[0m03:44:42.521505 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:44:42.521887 [info ] [MainThread]: 
+[0m03:44:42.522481 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:44:42.523514 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:44:42.591795 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:44:42.592294 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:44:42.592679 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:44:46.363366 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.770 seconds
+[0m03:44:46.367516 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:44:46.385939 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:44:46.386374 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:44:46.507693 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.121 seconds
+[0m03:44:46.513651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff6eb90>]}
+[0m03:44:46.516972 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:44:46.517622 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:44:46.518283 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:44:46.518741 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:44:46.532240 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:44:46.533115 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:44:46.663096 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:44:46.666641 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:44:46.667269 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (
+
+with base as (
+    select 
+        "DATE" as trade_date,
+        close_price,
+        volume,
+        ...
+    from ETF_DB.RAW.EEM_historical
+    where "DATE" is not null
+)
+
+
+daily_calc as (
+    select
+        *,
+        lag(close) over(partition by ticker order by date) as prev_close,
+        first_value(close) over(partition by ticker order by date) as first_close
+    from base
+),
+
+metrics as (
+    select
+        -- original fields
+        date,
+        ticker,
+        open,
+        high,
+        low,
+        close,
+        volume,
+
+        -- core return metrics
+        (close - prev_close) / prev_close as daily_return,
+        (close / first_close) - 1 as cumulative_return,
+
+        -- moving averages
+        avg(close) over(partition by ticker order by date rows between 19 preceding and current row) as ma_20,
+        avg(close) over(partition by ticker order by date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day standard)
+        case
+            when avg_gain + avg_loss = 0 then 0
+            else 100 - (100 / (1 + (avg_gain / avg_loss)))
+        end as rsi_14,
+
+        -- NEW: High/Low based metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close) / 3 as typical_price
+
+    from (
+        select
+            *,
+            avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by date rows between 13 preceding and current row) as avg_gain,
+            avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by date rows between 13 preceding and current row) as avg_loss
+        from daily_calc
+    )
+)
+
+select * from metrics
+    )
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:44:46.782415 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b88-0001-2fd5-0000-0000cead5c7d
+[0m03:44:46.783844 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 8 unexpected '.'.
+syntax error line 18 at position 0 unexpected 'daily_calc'.
+syntax error line 21 at position 19 unexpected 'over'.
+[0m03:44:46.791652 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'daily_calc'.
+  syntax error line 21 at position 19 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:44:46.794615 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd0258298-542c-4363-88de-13bfc16dec13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1179b3c50>]}
+[0m03:44:46.795772 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.27s]
+[0m03:44:46.796780 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:44:46.797667 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'daily_calc'.
+  syntax error line 21 at position 19 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:44:46.800073 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:44:46.800555 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:44:46.801005 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:44:46.923213 [info ] [MainThread]: 
+[0m03:44:46.924248 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.40 seconds (4.40s).
+[0m03:44:46.926046 [debug] [MainThread]: Command end result
+[0m03:44:46.954483 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:44:46.956435 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:44:46.963803 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:44:46.964322 [info ] [MainThread]: 
+[0m03:44:46.964818 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:44:46.965291 [info ] [MainThread]: 
+[0m03:44:46.965831 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:44:46.966317 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'daily_calc'.
+  syntax error line 21 at position 19 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:44:46.966710 [info ] [MainThread]: 
+[0m03:44:46.967156 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:44:46.967558 [info ] [MainThread]: 
+[0m03:44:46.967916 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:44:46.973270 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.610285, "process_in_blocks": "0", "process_kernel_time": 0.9888, "process_mem_max_rss": "215076864", "process_out_blocks": "0", "process_user_time": 4.399103}
+[0m03:44:46.974936 [debug] [MainThread]: Command `dbt run` failed at 03:44:46.974561 after 7.61 seconds
+[0m03:44:46.976004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041e3bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1041e3b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10809b6d0>]}
+[0m03:44:46.976521 [debug] [MainThread]: Flushing usage events
+[0m03:44:47.546423 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:46:52.367299 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d17b4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d17a410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d205a90>]}
+
+
+============================== 03:46:52.374625 | 60d9f461-d1c6-4fc8-9434-483408aadb58 ==============================
+[0m03:46:52.374625 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:46:52.375695 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt run --select EEM_historical_transformed', 'debug': 'False', 'no_print': 'None', 'profiles_dir': '/Users/deborah_j/.dbt', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'introspect': 'True', 'empty': 'False', 'partial_parse': 'True', 'warn_error': 'None', 'use_experimental_parser': 'False', 'target_path': 'None', 'log_format': 'default', 'printer_width': '80', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'write_json': 'True', 'quiet': 'False'}
+[0m03:46:54.485676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11302c350>]}
+[0m03:46:54.567460 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114345910>]}
+[0m03:46:54.569535 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:46:54.764368 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:46:55.009150 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:46:55.010373 [debug] [MainThread]: Partial parsing: updated file: etf_dbt://models/transformations/EEM_historical_transformed.sql
+[0m03:46:55.370936 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:46:55.389589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114a58090>]}
+[0m03:46:55.469478 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:46:55.474220 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:46:55.509853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114a84050>]}
+[0m03:46:55.510425 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:46:55.510824 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1148b6390>]}
+[0m03:46:55.512341 [info ] [MainThread]: 
+[0m03:46:55.512959 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:46:55.513317 [info ] [MainThread]: 
+[0m03:46:55.513854 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:46:55.514697 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:46:55.586590 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:46:55.587161 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:46:55.587590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:46:56.448808 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.861 seconds
+[0m03:46:56.453502 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:46:56.470980 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:46:56.471471 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:46:56.589171 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.117 seconds
+[0m03:46:56.596842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11492ac10>]}
+[0m03:46:56.601869 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:46:56.602896 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:46:56.603693 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:46:56.604434 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:46:56.616175 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:46:56.617766 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:46:56.743751 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:46:56.747883 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:46:56.748448 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (
+
+with base as (
+    select 
+        "DATE" as trade_date,
+        close_price,
+        volume,
+        ...
+    from ETF_DB.RAW.EEM_historical
+    where "DATE" is not null
+)
+
+
+with daily_calc as (
+    select
+        "DATE",
+        close_price,
+        sum(volume) over (partition by ... order by ...) as cum_volume
+    from ETF_DB.RAW.EEM_historical
+)
+select *
+from daily_calc
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:46:56.862040 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b8a-0001-2fd5-0000-0000cead5c81
+[0m03:46:56.863126 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 12 at position 8 unexpected '.'.
+syntax error line 18 at position 0 unexpected 'with'.
+syntax error line 22 at position 20 unexpected 'over'.
+[0m03:46:56.872240 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'with'.
+  syntax error line 22 at position 20 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:46:56.875731 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60d9f461-d1c6-4fc8-9434-483408aadb58', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11b822710>]}
+[0m03:46:56.877003 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.27s]
+[0m03:46:56.878195 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:46:56.879130 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'with'.
+  syntax error line 22 at position 20 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:46:56.881596 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:46:56.882115 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:46:56.882623 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:46:57.000046 [info ] [MainThread]: 
+[0m03:46:57.001279 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.49 seconds (1.49s).
+[0m03:46:57.002976 [debug] [MainThread]: Command end result
+[0m03:46:57.033481 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:46:57.035430 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:46:57.043005 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:46:57.043400 [info ] [MainThread]: 
+[0m03:46:57.043854 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:46:57.044406 [info ] [MainThread]: 
+[0m03:46:57.044889 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:46:57.045353 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 12 at position 8 unexpected '.'.
+  syntax error line 18 at position 0 unexpected 'with'.
+  syntax error line 22 at position 20 unexpected 'over'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:46:57.045714 [info ] [MainThread]: 
+[0m03:46:57.046126 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:46:57.046475 [info ] [MainThread]: 
+[0m03:46:57.046850 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:46:57.052727 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 4.774065, "process_in_blocks": "0", "process_kernel_time": 0.970051, "process_mem_max_rss": "215351296", "process_out_blocks": "0", "process_user_time": 4.415846}
+[0m03:46:57.053428 [debug] [MainThread]: Command `dbt run` failed at 03:46:57.053288 after 4.77 seconds
+[0m03:46:57.053890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cb2350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108cb2390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce44b10>]}
+[0m03:46:57.054340 [debug] [MainThread]: Flushing usage events
+[0m03:46:57.644619 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:48:38.268457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1125532d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1125e51d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1125e5610>]}
+
+
+============================== 03:48:38.275735 | 46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a ==============================
+[0m03:48:38.275735 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:48:38.277004 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'cache_selected_only': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'use_colors': 'True', 'fail_fast': 'False', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'introspect': 'True', 'version_check': 'True', 'warn_error': 'None', 'empty': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'write_json': 'True', 'static_parser': 'True', 'indirect_selection': 'eager', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'partial_parse': 'True', 'target_path': 'None', 'printer_width': '80', 'log_format': 'default', 'log_cache_events': 'False'}
+[0m03:48:40.420284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11014a850>]}
+[0m03:48:40.507779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111742390>]}
+[0m03:48:40.509611 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:48:40.715852 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:48:41.001154 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:48:41.007362 [debug] [MainThread]: Partial parsing: updated file: etf_dbt://models/transformations/EEM_historical_transformed.sql
+[0m03:48:41.416938 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:48:41.433465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11982b550>]}
+[0m03:48:41.518366 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:48:41.521917 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:48:41.555087 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119e32d10>]}
+[0m03:48:41.555816 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:48:41.556504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118424a50>]}
+[0m03:48:41.559211 [info ] [MainThread]: 
+[0m03:48:41.559946 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:48:41.560566 [info ] [MainThread]: 
+[0m03:48:41.561520 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:48:41.562980 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:48:41.635827 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:48:41.636270 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:48:41.636619 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:48:45.661429 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 4.025 seconds
+[0m03:48:45.665017 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:48:45.681109 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:48:45.681614 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:48:45.843494 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.161 seconds
+[0m03:48:45.850330 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1198c6ad0>]}
+[0m03:48:45.855136 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:48:45.855995 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:48:45.856882 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:48:45.857573 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:48:45.869067 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:48:45.900901 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:48:46.063336 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:48:46.067055 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:48:46.067689 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (
+
+with base as (
+    select 
+        "DATE" as trade_date,
+        close_price,
+        volume,
+        high,
+        low,
+        open,
+        ticker
+    from ETF_DB.RAW.EEM_historical
+    where "DATE" is not null
+),
+
+daily_calc as (
+    select
+        trade_date,
+        close_price,
+        volume,
+        high,
+        low,
+        open,
+        ticker,
+        lag(close_price) over (partition by ticker order by trade_date) as prev_close,
+        first_value(close_price) over (partition by ticker order by trade_date) as first_close,
+        (close_price - lag(close_price) over (partition by ticker order by trade_date)) 
+            / lag(close_price) over (partition by ticker order by trade_date) as daily_return
+    from base
+),
+
+metrics as (
+    select
+        *,
+        -- moving averages
+        avg(close_price) over(partition by ticker order by trade_date rows between 19 preceding and current row) as ma_20,
+        avg(close_price) over(partition by ticker order by trade_date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day)
+        avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_gain,
+        avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_loss,
+
+        -- High/Low metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close_price) / 3 as typical_price
+
+    from daily_calc
+)
+
+select *,
+    case
+        when avg_gain + avg_loss = 0 then 0
+        else 100 - (100 / (1 + (avg_gain / avg_loss)))
+    end as rsi_14
+from metrics
+order by trade_date
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:48:46.184327 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b8c-0001-2fe0-0000-0000ceade081
+[0m03:48:46.185389 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 66 at position 149 unexpected ';'.
+[0m03:48:46.194258 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 66 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:48:46.197684 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '46cd3971-3d5a-4e12-bd6d-66e2c0c5ba2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1124a9490>]}
+[0m03:48:46.199348 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.34s]
+[0m03:48:46.201159 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:48:46.202538 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 66 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:48:46.205457 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:48:46.206138 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:48:46.206646 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:48:46.331010 [info ] [MainThread]: 
+[0m03:48:46.331769 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.77 seconds (4.77s).
+[0m03:48:46.332662 [debug] [MainThread]: Command end result
+[0m03:48:46.357615 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:48:46.360724 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:48:46.367181 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:48:46.367606 [info ] [MainThread]: 
+[0m03:48:46.368477 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:48:46.368984 [info ] [MainThread]: 
+[0m03:48:46.369446 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:48:46.369887 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 66 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:48:46.370274 [info ] [MainThread]: 
+[0m03:48:46.370713 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:48:46.371083 [info ] [MainThread]: 
+[0m03:48:46.371471 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:48:46.377580 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.226297, "process_in_blocks": "0", "process_kernel_time": 1.03761, "process_mem_max_rss": "215228416", "process_out_blocks": "0", "process_user_time": 4.962921}
+[0m03:48:46.378181 [debug] [MainThread]: Command `dbt run` failed at 03:48:46.378056 after 8.23 seconds
+[0m03:48:46.378638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e086810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e0867d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111f2fbd0>]}
+[0m03:48:46.379056 [debug] [MainThread]: Flushing usage events
+[0m03:48:46.893039 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:50:01.046598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10973a510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097517d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109751bd0>]}
+
+
+============================== 03:50:01.054889 | e1a78510-82e9-4629-9de4-fba94d0e6d7f ==============================
+[0m03:50:01.054889 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:50:01.055842 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'indirect_selection': 'eager', 'empty': 'False', 'static_parser': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'fail_fast': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'profiles_dir': '/Users/deborah_j/.dbt', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'cache_selected_only': 'False', 'debug': 'False', 'log_format': 'default', 'use_experimental_parser': 'False', 'use_colors': 'True', 'quiet': 'False', 'partial_parse': 'True', 'target_path': 'None', 'printer_width': '80', 'no_print': 'None'}
+[0m03:50:03.003786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bc0810>]}
+[0m03:50:03.093356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110915c90>]}
+[0m03:50:03.094752 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:50:03.284265 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:50:03.568964 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:50:03.570137 [debug] [MainThread]: Partial parsing: updated file: etf_dbt://models/transformations/EEM_historical_transformed.sql
+[0m03:50:03.997790 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:50:04.015559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1088a7710>]}
+[0m03:50:04.099691 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:50:04.103361 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:50:04.138250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110e7a10>]}
+[0m03:50:04.139034 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:50:04.139486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110bdd710>]}
+[0m03:50:04.141180 [info ] [MainThread]: 
+[0m03:50:04.141579 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:50:04.141919 [info ] [MainThread]: 
+[0m03:50:04.142454 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:50:04.143309 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:50:04.218446 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:50:04.218944 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:50:04.219332 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:50:07.272694 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.053 seconds
+[0m03:50:07.277437 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:50:07.294808 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:50:07.295333 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:50:07.406179 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.110 seconds
+[0m03:50:07.412107 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113d2c410>]}
+[0m03:50:07.416899 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:50:07.417554 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:50:07.418270 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:50:07.418907 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:50:07.428549 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:50:07.429772 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:50:07.564859 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:50:07.568546 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:50:07.569107 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (
+
+with base as (
+    select 
+        "DATE" as trade_date,
+        close_price,
+        volume,
+        high,
+        low,
+        open,
+        ticker
+    from ETF_DB.RAW.EEM_historical
+    where "DATE" is not null
+),
+
+daily_calc as (
+    select
+        trade_date,
+        close_price,
+        volume,
+        high,
+        low,
+        open,
+        ticker,
+        lag(close_price) over (partition by ticker order by trade_date) as prev_close,
+        first_value(close_price) over (partition by ticker order by trade_date) as first_close,
+        (close_price - lag(close_price) over (partition by ticker order by trade_date)) 
+            / lag(close_price) over (partition by ticker order by trade_date) as daily_return
+    from base
+),
+
+metrics as (
+    select
+        *,
+        -- moving averages
+        avg(close_price) over(partition by ticker order by trade_date rows between 19 preceding and current row) as ma_20,
+        avg(close_price) over(partition by ticker order by trade_date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day)
+        avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_gain,
+        avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_loss,
+
+        -- High/Low metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close_price) / 3 as typical_price
+
+    from daily_calc
+)
+
+select *,
+    case
+        when avg_gain + avg_loss = 0 then 0
+        else 100 - (100 / (1 + (avg_gain / avg_loss)))
+    end as rsi_14
+from metrics
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:50:07.672203 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b8e-0001-30d4-0000-0000ceadb891
+[0m03:50:07.673087 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 65 at position 149 unexpected ';'.
+[0m03:50:07.679518 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 65 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:50:07.682269 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'e1a78510-82e9-4629-9de4-fba94d0e6d7f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118ae5a10>]}
+[0m03:50:07.683236 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.26s]
+[0m03:50:07.684120 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:50:07.684912 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 65 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:50:07.687131 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:50:07.687578 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:50:07.687984 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:50:07.807817 [info ] [MainThread]: 
+[0m03:50:07.808657 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 3.67 seconds (3.67s).
+[0m03:50:07.809841 [debug] [MainThread]: Command end result
+[0m03:50:07.836648 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:50:07.839756 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:50:07.846354 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:50:07.846793 [info ] [MainThread]: 
+[0m03:50:07.847261 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:50:07.847682 [info ] [MainThread]: 
+[0m03:50:07.848502 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:50:07.849160 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 65 at position 149 unexpected ';'.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:50:07.849682 [info ] [MainThread]: 
+[0m03:50:07.850129 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:50:07.850623 [info ] [MainThread]: 
+[0m03:50:07.851263 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:50:07.857372 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 6.9033837, "process_in_blocks": "0", "process_kernel_time": 0.94165, "process_mem_max_rss": "215584768", "process_out_blocks": "0", "process_user_time": 4.341405}
+[0m03:50:07.857975 [debug] [MainThread]: Command `dbt run` failed at 03:50:07.857851 after 6.90 seconds
+[0m03:50:07.858464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10973bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105206350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110a4f290>]}
+[0m03:50:07.858893 [debug] [MainThread]: Flushing usage events
+[0m03:50:08.592260 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:57:20.454670 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4b8b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f53d150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f53d590>]}
+
+
+============================== 03:57:20.461443 | fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8 ==============================
+[0m03:57:20.461443 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:57:20.462214 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'debug': 'False', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'empty': 'False', 'version_check': 'True', 'quiet': 'False', 'printer_width': '80', 'write_json': 'True', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '/Users/deborah_j/.dbt', 'no_print': 'None'}
+[0m03:57:22.547923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4e4750>]}
+[0m03:57:22.621919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f51d290>]}
+[0m03:57:22.623621 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:57:22.806807 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:57:23.056653 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m03:57:23.057342 [debug] [MainThread]: Partial parsing: updated file: etf_dbt://models/transformations/EEM_historical_transformed.sql
+[0m03:57:23.428477 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.etf_dbt.example
+[0m03:57:23.444393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116ad0f90>]}
+[0m03:57:23.527832 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:57:23.531753 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:57:23.567364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116f57f50>]}
+[0m03:57:23.568168 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:57:23.568683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116d098d0>]}
+[0m03:57:23.570566 [info ] [MainThread]: 
+[0m03:57:23.571060 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:57:23.571500 [info ] [MainThread]: 
+[0m03:57:23.572105 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:57:23.573037 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:57:23.649659 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:57:23.650594 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:57:23.651463 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:57:27.182584 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.531 seconds
+[0m03:57:27.187504 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:57:27.204132 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:57:27.204555 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:57:27.318544 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.114 seconds
+[0m03:57:27.325933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116cd2b50>]}
+[0m03:57:27.330506 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:57:27.331410 [info ] [Thread-1 (]: 1 of 1 START sql view model RAW.EEM_historical_transformed ..................... [RUN]
+[0m03:57:27.332159 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:57:27.332731 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:57:27.341647 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:57:27.343437 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:57:27.473469 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:57:27.477862 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:57:27.478533 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace   view ETF_DB.RAW.EEM_historical_transformed
+  
+  
+  
+  
+  as (
+    create or replace table RAW.EEM_historical_transformed as
+with base as (
+    select *
+    from RAW.EEM_raw_data
+),
+daily_calc as (
+    select
+        *,
+        (close_price - lag(close_price) over(partition by ticker order by trade_date)) / lag(close_price) over(partition by ticker order by trade_date) as daily_return
+    from base
+),
+metrics as (
+    select
+        *,
+        -- moving averages
+        avg(close_price) over(partition by ticker order by trade_date rows between 19 preceding and current row) as ma_20,
+        avg(close_price) over(partition by ticker order by trade_date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day)
+        avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_gain,
+        avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_loss,
+
+        -- High/Low metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close_price) / 3 as typical_price
+    from daily_calc
+)
+select *,
+    case
+        when avg_gain + avg_loss = 0 then 0
+        else 100 - (100 / (1 + (avg_gain / avg_loss)))
+    end as rsi_14
+from metrics
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:57:27.643510 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b95-0001-30d4-0000-0000ceadb895
+[0m03:57:27.644114 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 7 at position 4 unexpected 'create'.
+syntax error line 11 at position 1 unexpected ','.
+[0m03:57:27.648970 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'create'.
+  syntax error line 11 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:57:27.651002 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fc4a253e-bbc2-4ed7-92c5-02a4be4f83f8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119ddf690>]}
+[0m03:57:27.651805 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model RAW.EEM_historical_transformed ............ [[31mERROR[0m in 0.32s]
+[0m03:57:27.652611 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:57:27.653284 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'create'.
+  syntax error line 11 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:57:27.655190 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:57:27.655634 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:57:27.656002 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:57:27.814151 [info ] [MainThread]: 
+[0m03:57:27.814966 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 4.24 seconds (4.24s).
+[0m03:57:27.816268 [debug] [MainThread]: Command end result
+[0m03:57:27.914569 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:57:27.916434 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:57:27.923555 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:57:27.924039 [info ] [MainThread]: 
+[0m03:57:27.924626 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:57:27.925120 [info ] [MainThread]: 
+[0m03:57:27.925668 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:57:27.926180 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 7 at position 4 unexpected 'create'.
+  syntax error line 11 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:57:27.926564 [info ] [MainThread]: 
+[0m03:57:27.927099 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:57:27.927491 [info ] [MainThread]: 
+[0m03:57:27.927900 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:57:27.934171 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 7.5696955, "process_in_blocks": "0", "process_kernel_time": 0.999434, "process_mem_max_rss": "215179264", "process_out_blocks": "0", "process_user_time": 4.394016}
+[0m03:57:27.934945 [debug] [MainThread]: Command `dbt run` failed at 03:57:27.934808 after 7.57 seconds
+[0m03:57:27.935384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afde810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afde7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e4eb010>]}
+[0m03:57:27.935791 [debug] [MainThread]: Flushing usage events
+[0m03:57:28.652204 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m03:59:31.621268 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec0a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec02490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec08fd0>]}
+
+
+============================== 03:59:31.629461 | 3382cb0d-f27a-447e-b861-52d3894023c5 ==============================
+[0m03:59:31.629461 [info ] [MainThread]: Running with dbt=1.10.9
+[0m03:59:31.630410 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'log_format': 'default', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'printer_width': '80', 'partial_parse': 'True', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/logs', 'profiles_dir': '/Users/deborah_j/.dbt', 'introspect': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'invocation_command': 'dbt run --select EEM_historical_transformed', 'log_cache_events': 'False', 'quiet': 'False'}
+[0m03:59:33.730466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115ea2350>]}
+[0m03:59:33.804709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115de9f50>]}
+[0m03:59:33.806638 [info ] [MainThread]: Registered adapter: snowflake=1.10.0
+[0m03:59:34.006149 [debug] [MainThread]: checksum: 6543b8b248ceda473ef0d611849d5d909085b6b714afa9b515e9635faea7af23, vars: {}, profile: , target: , version: 1.10.9
+[0m03:59:34.193666 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m03:59:34.194442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ce097d0>]}
+[0m03:59:35.507890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116535c90>]}
+[0m03:59:35.577558 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:59:35.581020 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:59:35.614919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11922fed0>]}
+[0m03:59:35.615574 [info ] [MainThread]: Found 1 model, 1 source, 477 macros
+[0m03:59:35.616133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116534f90>]}
+[0m03:59:35.617838 [info ] [MainThread]: 
+[0m03:59:35.618283 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m03:59:35.618664 [info ] [MainThread]: 
+[0m03:59:35.619268 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m03:59:35.620102 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_ETF_DB'
+[0m03:59:35.694866 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB"
+[0m03:59:35.695857 [debug] [ThreadPool]: On list_ETF_DB: show terse schemas in database ETF_DB
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB"} */
+[0m03:59:35.696632 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:59:39.178882 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 3.482 seconds
+[0m03:59:39.181797 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ETF_DB, now list_ETF_DB_RAW)
+[0m03:59:39.195305 [debug] [ThreadPool]: Using snowflake connection "list_ETF_DB_RAW"
+[0m03:59:39.195726 [debug] [ThreadPool]: On list_ETF_DB_RAW: show objects in ETF_DB.RAW
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "connection_name": "list_ETF_DB_RAW"} */;
+[0m03:59:39.305674 [debug] [ThreadPool]: SQL status: SUCCESS 10 in 0.109 seconds
+[0m03:59:39.312741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x116561b10>]}
+[0m03:59:39.317947 [debug] [Thread-1 (]: Began running node model.etf_dbt.EEM_historical_transformed
+[0m03:59:39.318828 [info ] [Thread-1 (]: 1 of 1 START sql table model RAW.EEM_historical_transformed .................... [RUN]
+[0m03:59:39.319584 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ETF_DB_RAW, now model.etf_dbt.EEM_historical_transformed)
+[0m03:59:39.320193 [debug] [Thread-1 (]: Began compiling node model.etf_dbt.EEM_historical_transformed
+[0m03:59:39.331231 [debug] [Thread-1 (]: Writing injected SQL for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:59:39.333105 [debug] [Thread-1 (]: Began executing node model.etf_dbt.EEM_historical_transformed
+[0m03:59:39.366867 [debug] [Thread-1 (]: Writing runtime sql for node "model.etf_dbt.EEM_historical_transformed"
+[0m03:59:39.370397 [debug] [Thread-1 (]: Using snowflake connection "model.etf_dbt.EEM_historical_transformed"
+[0m03:59:39.371137 [debug] [Thread-1 (]: On model.etf_dbt.EEM_historical_transformed: create or replace transient table ETF_DB.RAW.EEM_historical_transformed
+    
+    
+    
+    as (create or replace table RAW.EEM_historical_transformed as
+with base as (
+    select *
+    from RAW.EEM_raw_data
+),
+daily_calc as (
+    select
+        *,
+        (close_price - lag(close_price) over(partition by ticker order by trade_date)) / lag(close_price) over(partition by ticker order by trade_date) as daily_return
+    from base
+),
+metrics as (
+    select
+        *,
+        -- moving averages
+        avg(close_price) over(partition by ticker order by trade_date rows between 19 preceding and current row) as ma_20,
+        avg(close_price) over(partition by ticker order by trade_date rows between 49 preceding and current row) as ma_50,
+
+        -- rolling volatility
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 19 preceding and current row) as volatility_20,
+        stddev(daily_return) over(partition by ticker order by trade_date rows between 49 preceding and current row) as volatility_50,
+
+        -- RSI (14-day)
+        avg(case when daily_return > 0 then daily_return else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_gain,
+        avg(case when daily_return < 0 then abs(daily_return) else 0 end) over(partition by ticker order by trade_date rows between 13 preceding and current row) as avg_loss,
+
+        -- High/Low metrics
+        (high - low) as daily_range,
+        (high - low) / nullif(open, 0) as range_pct,
+        (high + low + close_price) / 3 as typical_price
+    from daily_calc
+)
+select *,
+    case
+        when avg_gain + avg_loss = 0 then 0
+        else 100 - (100 / (1 + (avg_gain / avg_loss)))
+    end as rsi_14
+from metrics
+/* {"app": "dbt", "dbt_version": "1.10.9", "profile_name": "etf_dbt", "target_name": "dev", "node_id": "model.etf_dbt.EEM_historical_transformed"} */;
+[0m03:59:39.466484 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01be6b97-0001-2fe0-0000-0000ceade091
+[0m03:59:39.467498 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 8 unexpected 'create'.
+syntax error line 9 at position 1 unexpected ','.
+[0m03:59:39.474582 [debug] [Thread-1 (]: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected 'create'.
+  syntax error line 9 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:59:39.477317 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3382cb0d-f27a-447e-b861-52d3894023c5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119184290>]}
+[0m03:59:39.478400 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model RAW.EEM_historical_transformed ........... [[31mERROR[0m in 0.16s]
+[0m03:59:39.479392 [debug] [Thread-1 (]: Finished running node model.etf_dbt.EEM_historical_transformed
+[0m03:59:39.480810 [debug] [Thread-4 (]: Marking all children of 'model.etf_dbt.EEM_historical_transformed' to be skipped because of status 'error'.  Reason: Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected 'create'.
+  syntax error line 9 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql.
+[0m03:59:39.484096 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m03:59:39.484865 [debug] [MainThread]: Connection 'model.etf_dbt.EEM_historical_transformed' was left open.
+[0m03:59:39.485678 [debug] [MainThread]: On model.etf_dbt.EEM_historical_transformed: Close
+[0m03:59:39.617136 [info ] [MainThread]: 
+[0m03:59:39.617939 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.00 seconds (4.00s).
+[0m03:59:39.619254 [debug] [MainThread]: Command end result
+[0m03:59:39.648288 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/manifest.json
+[0m03:59:39.650218 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/semantic_manifest.json
+[0m03:59:39.656630 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/deborah_j/Documents/CEU/Projects_Showcase/proj1_ETF_Mkt_Pipeline/etf_dbt/target/run_results.json
+[0m03:59:39.657027 [info ] [MainThread]: 
+[0m03:59:39.657471 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m03:59:39.657850 [info ] [MainThread]: 
+[0m03:59:39.658354 [error] [MainThread]: [31mFailure in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)[0m
+[0m03:59:39.658826 [error] [MainThread]:   Database Error in model EEM_historical_transformed (models/transformations/EEM_historical_transformed.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 8 unexpected 'create'.
+  syntax error line 9 at position 1 unexpected ','.
+  compiled code at target/run/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:59:39.659222 [info ] [MainThread]: 
+[0m03:59:39.659659 [info ] [MainThread]:   compiled code at target/compiled/etf_dbt/models/transformations/EEM_historical_transformed.sql
+[0m03:59:39.660035 [info ] [MainThread]: 
+[0m03:59:39.660419 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m03:59:39.665669 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 8.136507, "process_in_blocks": "0", "process_kernel_time": 0.953666, "process_mem_max_rss": "215629824", "process_out_blocks": "0", "process_user_time": 5.15125}
+[0m03:59:39.666588 [debug] [MainThread]: Command `dbt run` failed at 03:59:39.666299 after 8.14 seconds
+[0m03:59:39.667367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6abdd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a6b65d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eba6250>]}
+[0m03:59:39.668072 [debug] [MainThread]: Flushing usage events
+[0m03:59:40.212603 [debug] [MainThread]: An error was encountered while trying to flush usage events

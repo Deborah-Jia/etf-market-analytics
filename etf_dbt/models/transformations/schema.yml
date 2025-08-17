@@ -1,0 +1,51 @@
+version: 2
+
+sources:
+  - name: etf_raw
+    database: ETF_DB
+    schema: RAW
+    tables:
+      - name: EEM_historical
+
+models:
+  - name: EEM_historical_transformed
+    description: "Transformed historical EEM data with technical indicators and volatility metrics"
+    columns:
+      - name: date
+        description: "Trading date"
+      - name: ticker
+        description: "Stock ticker symbol"
+      - name: open
+        description: "Opening price"
+      - name: high
+        description: "Highest price of the day"
+      - name: low
+        description: "Lowest price of the day"
+      - name: close
+        description: "Closing price"
+      - name: volume
+        description: "Daily trading volume"
+
+      # Derived metrics
+      - name: daily_return
+        description: "Daily percentage return = (Close - Prev_Close) / Prev_Close"
+      - name: cumulative_return
+        description: "Cumulative return since first available date = (Close / First_Close) - 1"
+      - name: ma_20
+        description: "20-day simple moving average of Close"
+      - name: ma_50
+        description: "50-day simple moving average of Close"
+      - name: volatility_20
+        description: "20-day rolling standard deviation of daily returns"
+      - name: volatility_50
+        description: "50-day rolling standard deviation of daily returns"
+      - name: rsi_14
+        description: "14-day Relative Strength Index, momentum indicator"
+
+      # High/Low derived metrics
+      - name: daily_range
+        description: "Daily absolute price range = High - Low"
+      - name: range_pct
+        description: "Daily price range as a percentage of Open = (High - Low) / Open"
+      - name: typical_price
+        description: "Average of High, Low, and Close = (High + Low + Close) / 3"
